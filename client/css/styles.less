@@ -1,0 +1,266 @@
+@import "../css/about.less";
+//@import "../css/admin.less";
+//@import "../css/services.less";
+@import "../css/welcome.less";
+@import "../css/contact.less";
+@import "https://fonts.googleapis.com/css?family=Lato";
+@import "../css/gallery.less";
+@import "../css/leadership.less";
+@text-family: 'Lato', 'sans-serif';
+
+* {
+    font-family: @text-family;
+}
+
+// .btn.btn-info{
+//     background-color: #03A5BA;
+//     border-radius: 5px;
+//     border: none;
+//     color: white;
+//     margin-top: 1em;
+// }
+
+body {
+    margin-top: 5em;
+    margin-bottom: 5em;
+    background-image: url("../images/CG_bg_color.png");
+    background-repeat: repeat;
+}
+
+.navbar-brand {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 36px;
+    color: goldenrod;
+}
+.toplinks {
+    color: white;
+}
+.container-fluid {
+    height: 28px;
+}
+.navbar {
+    min-height: 40px !important;
+    //height: 1em;
+    margin-bottom: 0;
+    background-color: white;
+
+.nav.navbar-nav.navbar-right li a {
+    color: goldenrod;
+    margin-top: -2.1em;
+}
+
+// .image1 {
+//         height: 7em;
+//         width: 10em;
+//         margin-top: 1em;
+//     }
+
+#navtitle {
+        height: 7em;
+        width: 10em;
+        margin-top: 5em;
+    }    
+
+    .links {
+        background-color: #001a33;
+        height: 3em;
+        width: 3em;
+        float: left;
+    }
+
+    img {
+        // height: 4em;
+        // width: 15em;
+        // background-size: auto;
+        // background-repeat: no-repeat;
+        // margin-top: 0.5em;
+        // line-height: 8em;
+
+        height: 3.5em;
+        width: 3.5em;
+        background-size: auto;
+        background-repeat: no-repeat;
+        margin-top: 0.5em;
+        line-height: 3em;
+    }
+    
+
+    .facebook {
+        background-image: url('../images/fb-black.png');
+        height: 2em;
+        width: 3em;
+        margin-top: 2.5em;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .instagram {
+        background-image: url('/images/insta-grey.svg');
+        height: 2em;
+        width: 3em;
+        background-size: auto;
+        background-repeat: no-repeat; 
+         margin-top: 2.5em;
+        vertical-align: middle;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            margin-left: 1.5em;
+            margin-right: 1.5em;
+            text-align: center;
+
+            a{
+                padding-top: 10px !important;
+                padding-bottom: 10px !important;
+                height: 28px;
+                line-height: 8em;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.btn.btn-info {
+    background-color: #E7B72B;
+}
+
+.btn:hover {
+    background-color: #001a33;
+    color:white;
+    transition-duration: 0.4s;
+        
+}
+.footer-distributed {
+    height: 2em;
+    background-color: #001a33;
+    color: white;
+    line-height: 2em;
+    font-size: 15px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+
+    a {
+        color: white;
+    }
+}
+
+.footer-distributed a:before {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: #001a33;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.footer-distributed a:hover:before 
+{
+    height: 100%;
+}
+
+.nav.navbar-nav.navbar-right li a:before {
+   position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    content: '';
+    background: white;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+.nav.navbar-nav.navbar-right li a:hover:before {
+
+     height: 100%;
+} 
+
+
+@media screen and (max-width: 575px) {
+    body {
+        margin-top: 7em;
+    }
+    .navbar ul li a {
+        line-height: 2em;
+    }
+    .navbar .links {
+        background-color: transparent;
+        margin-top: -1em;
+    }
+    // .navbar-header {
+    //     background-image: url('../images/CG_logo.png');
+    //     background-size: 100% 100%;
+    //     height: 8em;
+    // }
+    .image1 {
+        display: none;
+    }
+    .navbar-toggle.collapsed {
+        //padding: 0 0;
+        //margin-bottom: 0;
+        background-color: #001a33;
+        //margin-top: 76px;
+        margin-top: 7em;
+    }
+    .nav.navbar-nav.navbar-right.words {
+        display: inline-block;
+    }
+    #myNavbar {
+        background-color: transparent;
+    }
+    #anotherID {
+        background-image: url('../images/CG_bg_color.png');
+    }
+    /* .page-scroll{
+        background-color: #001a33;
+    } */
+    .footer-distributed {
+        text-align: center;
+        line-height: 2em;
+        height: 5em;
+    }
+    .navbar-toggle {
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: goldenrod;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
+
+// Animations
+
+main.ng-enter {
+    transition: 0.8s linear all;
+    opacity: 0;
+}
+
+main.ng-enter.ng-enter-active {
+    opacity: 1;
+}
+

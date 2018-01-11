@@ -1,0 +1,75 @@
+<!--LEFT SIDE DIV STARTS HERE-->
+<div class="container">
+    <h1 id="loc">LOCATIONS</h1>
+    <div class='row'>
+        <div class='col-lg-6'>
+            <h1 id="abouttext">ALABAMA</h1>
+            <p class="locheader">ADDRESS</p>
+            <p class="address">2012 Old Montgomery Hwy.<br /> Birmingham, AL 35244<br /> Phone: (205) 555-555
+            </p>
+            <p class="locheader">OPPORTUNITY EVENTS</p>
+            <p class="events">Every Tuesday 6:00 p.m.<br /> Every Friday 9:30 a.m.<br /></p>
+        </div>
+
+        <div class='col-lg-6'>
+            <h1 id="abouttext2">MISSISSIPPI</h1>
+            <p class="eventheader">ADDRESS</p>
+            <p class="address">6485 I 55 N Frontage Rd<br /> Ridgeland, MS 39157<br /> Phone: (205) 555-555
+            </p>
+            <p class="eventheader">OPPORTUNITY EVENTS</p>
+            <p class="events">Every Tuesday 9:30 a.m. and 6:00 p.m.</p>
+        </div>
+    </div>
+    <!--LEFT SIDE DIV ENDS HERE-->
+
+    <!--GOOGLE MAP STARTS HERE-->
+    <div class="row">
+        <div class="col-lg-6">
+            <!-- <div class="col-md-12"> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3333.018748887353!2d-86.80129898518636!3d33.3444599808044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888923b6fbd223a1%3A0xfd8edd582a88f712!2s2012+Old+Montgomery+Hwy%2C+Pelham%2C+AL+35124!5e0!3m2!1sen!2sus!4v1503023229697"
+                    width="500" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <!-- </div> -->
+        </div>
+        <div class="col-lg-6">
+            <!-- <div class="col-md-12"> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3368.604143750632!2d-90.14871678521448!3d32.40297158108655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8629d26c83ec66f5%3A0xbc691c3d708bfbfe!2sHoliday+Inn+Express+%26+Suites+Ridgeland+-+Jackson+North+Area!5e0!3m2!1sen!2sus!4v1503023390952"
+                    width="500" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <!-- </div> -->
+        </div>
+    </div>
+    <!--GOOGLE MAP ENDS HERE-->
+
+   <!--CONTACT FORM STARTS HERE--> 
+    <div class="row contact">
+        <h3>Contact Form</h3>
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" placeholder="Your email address..">
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+
+            <label for="referral">Referral</label>
+            <select id="referral" name="referral">
+              <option value="referral">Select A Name</option>  
+              <option value="fernando">Fernando Lassiter</option>
+              <option value="donaldo">Donaldo Harris</option>
+              <option value="ervin">Ervin Davis</option>
+              <option value="shenna">Shenna Michelle</option>
+              <option value="mike">Mike Hayes</option>
+              <option value="robin">Robin Richardson</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Tell us about yourself.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <!--CONTACT FORM ENDS HERE-->

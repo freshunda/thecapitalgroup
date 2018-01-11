@@ -1,0 +1,44 @@
+<div class="page-header">
+    <h1 class="h1welcome">THE CAPITAL GROUP<br /><small>Meet Our Team</small></h1>
+</div>
+
+<section>
+        <div class="row leader">
+            <div class="column">
+                <div class="card">
+                    <img src="../images/teampic2.jpg" alt="Fernando" style="width:100%">
+                    <div class="container">
+                        <h2>Fernando Lassiter</h2>
+                        <p class="title">Founder</p>
+                        <p>A great leader...</p>
+                        <p>flassiter1@aol.com</p>
+                        <p><button class="button">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<section>
+    <div class="row">
+        <div class="column" ng-repeat="gallery in galleries">
+            <div class="card">
+                <img src="../images/{{gallery.imgurl}}" alt="{{gallery.name}}" style="width:100%">
+                <div class="container">
+                    <h2>{{gallery.name}}</h2>
+                    <p class="title">{{gallery.title}}</p>
+                    <p>{{gallery.desc}}</p>
+                    <p>{{gallery.email}}</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section>
+    <div class="text-center">
+        <h1>OUR MISSION</h1>
+        <p>We strive to...</p>
+    </div>
+</section>
+
+<!-- class="d-block mb-4 h-100" -->

@@ -1,0 +1,28 @@
+{
+  "name": "capitalgroup",
+  "version": "1.0.0",
+  "description": "capital group site",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "source .variables && nodemon"
+  },
+  "author": "fm_lewis",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.4",
+    "express-mysql-session": "^1.2.1",
+    "express-session": "^1.15.5",
+    "jquery": "^3.2.1",
+    "mysql": "^2.14.1",
+    "ngstorage": "^0.3.11",
+    "nodejs": "0.0.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "prerender-node": "^2.7.2",
+    "sendgrid": "^5.2.0"
+  }
+}
