@@ -6,6 +6,7 @@
 @import "https://fonts.googleapis.com/css?family=Lato";
 @import "../css/gallery.less";
 @import "../css/leadership.less";
+@import "../css/careers.less";
 @text-family: 'Lato', 'sans-serif';
 
 * {
@@ -27,15 +28,12 @@ body {
     background-repeat: repeat;
 }
 
-.navbar-brand {
-    font-family: 'Pinyon Script', cursive;
+.nav-header.navbar-brand {
     font-size: 36px;
     color: goldenrod;
 }
 
-.toplinks {
-    color: white;
-}
+
 .container-fluid {
     height: 28px;
 }
@@ -43,7 +41,11 @@ body {
     //min-height: 40px !important;
     //height: 1em;
     margin-bottom: 0;
-    background-color: white;
+    background-color: whitesmoke;
+
+    .toplinks {
+        color: white;
+    }
 
 .nav.navbar-nav.navbar-right li a {
     color: goldenrod;
@@ -87,23 +89,46 @@ body {
     
 
     .facebook {
-        background-image: url('../images/fb-black.png');
-        height: 2em;
-        width: 3em;
-        margin-top: 2.5em;
-        background-repeat: no-repeat;
-        
+        height: 1em;
+        width: 1em;
+        margin-top: 1em;
+        margin-right: 1em;
     }
     
     .instagram {
-        background-image: url('/images/insta-grey.svg');
-        height: 2em;
-        width: 3em;
-        background-size: auto;
-        background-repeat: no-repeat; 
-         margin-top: 2.5em;
-        vertical-align: middle;
+        height: 1em;
+        width: 1em;
+        margin-top: 1em;
+        margin-right: 1em;
     }
+
+    .twitter {
+        height: 1em;
+        width: 1em;
+        margin-top: 1em;
+    }
+
+    .apply {
+        background-color: transparent;
+        font-size: 12px;
+        padding: 10px 24px;
+        border-radius: 2px;
+        border: 2px solid #001a33;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        margin-top: .5em;
+    }
+
+    .apply:hover {
+        background-color: #001a33;
+        color: white;
+    }
+
+    /* .logo {
+        height: 5em;
+        width: 5em;
+        margin-top: 0em;
+    } */
 
     ul {
         list-style-type: none;
@@ -114,12 +139,13 @@ body {
             text-align: center;
 
             a{
-                padding-top: 10px !important;
+                color: #001a33;
+                /* padding-top: 10px !important;
                 padding-bottom: 10px !important;
                 height: 28px;
                 line-height: 8em;
                 padding: 0;
-                margin: 0;
+                margin: 0; */
             }
         }
     }

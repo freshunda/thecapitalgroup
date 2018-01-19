@@ -41,6 +41,10 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             templateUrl: 'views/admin.html',
             controller: 'AdminController'
         })
+        .when('/careers', {
+            templateUrl: 'views/careers.html',
+            controller: 'CareersController'
+        })
         .otherwise({
             redirectTo: '/'
         });

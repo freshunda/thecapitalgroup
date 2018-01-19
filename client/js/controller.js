@@ -61,6 +61,16 @@ angular.module('CapitalGroup.controllers', [])
         });
     }])
 
+    .controller('CareersController', ['$scope', '$location', 'SEOService', function ($scope, $location, SEOService) {
+        $scope.services = Services.query();
+        SEOService.setSEO({
+            title: 'Careers',
+            image: 'http://' + $location.host() + '/images/CG_logo.png',
+            url: $location.url(),
+            description: 'The Capital Group Careers'
+        });
+    }])
+
     .controller('MailingController', ['$scope', '$http', '$location', 'Mailing', 'SEOService', function ($scope, $http, $location, Mailing, SEOService) {
         SEOService.setSEO({
             title: 'Mailing List',

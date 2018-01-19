@@ -1,0 +1,29 @@
+.item {
+  color: white;
+  text-align: center;
+}
+h1.join {
+  color: white;
+  font-stretch: expanded;
+  text-align: center;
+}
+hr {
+  border-top: 4px double #DAA520;
+  text-align: center;
+}
+.offers {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.glyphicon {
+  display: inline-block;
+  vertical-align: middle;
+  color: goldenrod;
+}
+.offer {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: lighter;
+}

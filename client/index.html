@@ -54,44 +54,54 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" onclick="myFunction(this)">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>                        
           </button>
-            <a class="navbar-brand" href="/welcome">The Capital Group</a>
+                <!-- <img class="logo" src="../images/CG.png" alt="Capital Group Insurance"> -->
+                <a href="https://www.facebook.com/Capital-Group-1964655300433964/">
+          <img class="facebook" src="../images/fb-black.png" alt="Facebook">
+          </a>
+          <button class="apply">APPLY NOW</button>
+                <!-- <img class="instagram" src="../images/insta.png" alt="Instagram">
+                <img class="twitter" src="../images/twitter.png" alt="Twitter"> -->
+                <!-- <a class="navbar-brand" href="/welcome">Home</a> -->
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- <li class="active"><a href="/welcome">Home</a></li> -->
+                    <li class="dropdown">
+                        <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a> -->
+                        <!-- <ul class="dropdown-menu">
+                            <li><a class="" href="/about">ABOUT</a></li>
+                            <li><a href="#">Page 1-2</a></li>
+                            <li><a href="#">Page 1-3</a></li>
+                        </ul> -->
+                    </li>
+                    <li><a class="toplinks" href="/welcome">HOME</a></li>
+                    <li><a class="toplinks" href="/about">ABOUT</a></li>
+                    <li><a class="toplinks" href="/leadership">LEADERSHIP</a></li>
+                    <li><a class="toplinks" href="/gallery">GALLERY</a></li>
+                    <li><a class="toplinks" href="/services">OUR PRODUCT</a></li>
+                    <li><a class="toplinks" href="/careers">CAREERS</a></li>
+                    <li><a class="toplinks" href="/contact">CONTACT</a></li>
+                    <li><a class="toplinks" href="/training">TRAINING</a></li>
+                </ul>
+                <!-- <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/Capital-Group-1964655300433964/">
+                        </div>
+                        </a>
+                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul> -->
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <!-- <li class="active"><a href="/welcome">Home</a></li> -->
-                <li class="dropdown">
-                    <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a> -->
-                    <ul class="dropdown-menu">
-                        <li><a class="" href="/about">ABOUT</a></li>
-                        <li><a href="#">Page 1-2</a></li>
-                        <li><a href="#">Page 1-3</a></li>
-                    </ul>
-                </li>
-                <li><a class="toplinks" href="/about">ABOUT</a></li>
-                <li><a class="toplinks" href="/leadership">LEADERSHIP</a></li>
-                <li><a class="toplinks" href="/gallery">GALLERY</a></li>
-                <li><a class="toplinks" href="/services">SERVICES</a></li>
-                <li><a class="toplinks" href="/contact">CONTACT</a></li>
-                <li><a class="toplinks" href="/training">TRAINING</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <div class="facebook">
-                        <a href="https://www.facebook.com/Capital-Group-1964655300433964/">
-                    </div>
-                    </a>
-                </li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </div>
-    </div>
     </nav>
     <main ng-view></main>
     <div class="col-md-offset-3 col-md-2">
@@ -104,7 +114,7 @@
     <footer class="footer-distributed">
         <div class="row">
             <div class="col-md-12 mailing">
-                <p><a href="/contact">Join Our Mailing List</a></p>
+                <p><a href="/contact">Apply Now</a></p>
             </div>
             <!-- <div class="col-md-offset-6 col-md-2">
                 <p><a href="/login">Login</a></p>
