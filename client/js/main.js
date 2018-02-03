@@ -9,9 +9,9 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
             templateUrl: 'views/welcome.html',
             controller: 'WelcomeController'
         })
-        .when('/services', {
-            templateUrl: 'views/services.html',
-            controller: 'ServicesController'
+        .when('/product', {
+            templateUrl: 'views/product.html',
+            controller: 'ProductController'
         })
         .when('/leadership', {
             templateUrl: 'views/leadership.html',
@@ -44,6 +44,10 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         .when('/careers', {
             templateUrl: 'views/careers.html',
             controller: 'CareersController'
+        })
+        .when('/apply', {
+            templateUrl: 'views/apply.html',
+            controller: 'ApplyController'
         })
         .otherwise({
             redirectTo: '/'

@@ -1,8 +1,32 @@
+.mobileShow {
+    display: none;
+}
+
+.mobileHide {
+    display: list-item;
+}
+
 @media (max-width: 650px) {
+    .mobileShow {
+        display: list-item;
+    }
+
+    .mobileHide {
+        display: none;
+    }
+
     .leader {
         width: 100%;
         display: block;
     }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+.leadership {
+    margin-top: 5%;
 }
 
 .leader {
@@ -13,15 +37,25 @@
     margin: auto;
 }
 
-.img-lead {
-    width: 100%;
+hr {
+    border-top: 4px double #DAA520;
+    text-align: center;
+}
+
+.team-left .img-lead{
+    max-width: 100%;
+    height: auto;
 }
 
 .card.founder {
     text-align: center;
 }
 
-.meet {
+.titles{
+    font-weight: bold;
+}
+
+.jumbotron .meet {
     text-align: center;
     color: white;
 }
@@ -41,6 +75,8 @@ h1{
 
 .bio {
     color: white;
+    font-weight: lighter;
+    font-size: 2rem;
 }
 
 .titles {

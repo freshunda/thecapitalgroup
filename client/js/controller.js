@@ -1,11 +1,5 @@
 angular.module('CapitalGroup.controllers', [])
     .controller('WelcomeController', ['$scope', '$http', '$location', 'SEOService', function ($scope, $http, $location, SEOService) {
-        $scope.goToShop = function () {
-            $location.path('/products');
-        }
-        $scope.goToLogin = function () {
-            $location.path('/login');
-        }
         SEOService.setSEO({
             title: 'The Capital Group',
             image: 'http://' + $location.host() + '/images/CG_logo.png',
@@ -51,23 +45,34 @@ angular.module('CapitalGroup.controllers', [])
         });
     }])
 
-    .controller('ServicesController', ['$scope', '$location', 'SEOService', function ($scope, $location, SEOService) {
-        $scope.services = Services.query();
+    .controller('ProductController', ['$scope', '$location', 'SEOService', function ($scope, $location, SEOService) {
         SEOService.setSEO({
-            title: 'Services',
+            title: 'Our Product',
             image: 'http://' + $location.host() + '/images/CG_logo.png',
             url: $location.url(),
-            description: 'The Capital Group Services'
+            description: 'The Capital Group Product'
         });
     }])
 
     .controller('CareersController', ['$scope', '$location', 'SEOService', function ($scope, $location, SEOService) {
-        $scope.services = Services.query();
         SEOService.setSEO({
             title: 'Careers',
             image: 'http://' + $location.host() + '/images/CG_logo.png',
             url: $location.url(),
             description: 'The Capital Group Careers'
+        });
+
+        $scope.goToApply = function () {
+            $location.path('/apply');
+        }
+    }])
+
+    .controller('ApplyController', ['$scope', '$location', 'SEOService', function ($scope, $location, SEOService) {
+        SEOService.setSEO({
+            title: 'Apply',
+            image: 'http://' + $location.host() + '/images/CG_logo.png',
+            url: $location.url(),
+            description: 'The Capital Group Apply Now'
         });
     }])
 

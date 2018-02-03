@@ -1,13 +1,14 @@
 @import "../css/about.less";
 //@import "../css/admin.less";
-//@import "../css/services.less";
+@import "../css/product.less";
 @import "../css/welcome.less";
 @import "../css/contact.less";
-@import "https://fonts.googleapis.com/css?family=Lato";
+@import "https://fonts.googleapis.com/css?family=Cormorant+Garamond";
 @import "../css/gallery.less";
 @import "../css/leadership.less";
 @import "../css/careers.less";
-@text-family: 'Lato', 'sans-serif';
+@import "../css/apply.less";
+@text-family: 'Cormorant Garamond, serif';
 
 * {
     font-family: @text-family;
@@ -30,7 +31,7 @@ body {
 
 .nav-header.navbar-brand {
     font-size: 36px;
-    color: goldenrod;
+    color: #DAA520;
 }
 
 
@@ -48,7 +49,7 @@ body {
     }
 
 .nav.navbar-nav.navbar-right li a {
-    color: goldenrod;
+    color: #DAA520;
     margin-top: -2.1em;
 }
 
@@ -140,6 +141,9 @@ body {
 
             a{
                 color: #001a33;
+                display: block;
+                text-align: center;
+                text-decoration: none;
                 /* padding-top: 10px !important;
                 padding-bottom: 10px !important;
                 height: 28px;
@@ -147,12 +151,17 @@ body {
                 padding: 0;
                 margin: 0; */
             }
+           li a:hover {
+                background-color: #DAA520;
+                // color:white;
+                // transition-duration: 0.4s;
+            }
         }
     }
 }
 
 .btn.btn-info {
-    background-color: #E7B72B;
+    background-color: #DAA520;
 }
 
 .btn:hover {
@@ -266,7 +275,7 @@ body {
     .bar1, .bar2, .bar3 {
         width: 35px;
         height: 5px;
-        background-color: goldenrod;
+        background-color: #DAA520;
         margin: 6px 0;
         transition: 0.4s;
     }
