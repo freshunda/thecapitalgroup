@@ -1,23 +1,33 @@
 <!--CONTACT FORM STARTS HERE-->
-<div class="row contact">
-        <h1 class="applyh1 text-center">Apply Now</h1>
-    <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+<div class="row contact" value="userid" ng-model="userid">
+    <h1 class="applyh1 text-center">Apply Now</h1>
+    <form name="prospectForm" ng-submit="addProspect()">
+        <label class="text-success" ng-show="successInsert">{{successInsert}}</label>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" ng-model="firstname" placeholder="Your first name.." required>
+            <span class="text-danger" ng-show="prospectForm.firstname.$touched && prospectForm.firstname.$invalid">A first name is required.</span>
+            <br>
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" ng-model="lastname" placeholder="Your last name.." required>
+            <span class="text-danger" ng-show="prospectForm.lastname.$touched && prospectForm.lastname.$invalid">A last name is required.</span>
+            <br>
 
-        <label for="email">Email Address</label>
-        <input type="text" id="email" name="email" placeholder="Your email address..">
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" ng-model="email" placeholder="Your email address.." required>
+            <span class="text-danger" ng-show="prospectForm.email.$touched && prospectForm.email.$invalid">A valid email address is required.</span>
+            <br>
 
-        <label for="phone">Phone Number</label>
-        <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" ng-model="phone" placeholder="Your phone number.." required>
+            <span class="text-danger" ng-show="prospectForm.phone.$touched && prospectForm.phone.$invalid">A valid phone number is required.</span>
+            <br>
 
-        <label for="subject">Message</label>
-        <textarea id="message" name="subject" placeholder="Tell us about yourself.." style="height:200px"></textarea>
+            <label for="subject">Message</label>
+            <textarea id="message" name="subject" ng-model="subject" placeholder="Tell us about yourself.." style="height:200px" required></textarea>
+            <span class="text-danger" ng-show="errorSubject">{{errorSubject}}</span>
 
-        <input type="submit" value="Submit">
+            <input type="submit" name="btnInsert" value="Submit" />
     </form>
 </div>
 <!--CONTACT FORM ENDS HERE-->

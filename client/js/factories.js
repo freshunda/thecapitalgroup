@@ -1,8 +1,9 @@
 angular.module('CapitalGroup.factories', [])
 
 
-    .factory('Prospects', ['$resource', function ($resource) {
-        return $resource('api/prospects/:id', { id: '@id' }, {
+    .factory('Apply', ['$resource', function ($resource) {
+        return $resource('api/apply/:id', { id: '@id' }, {
+            'update': { method: 'PUT' }
         });
     }])
 
@@ -22,7 +23,8 @@ angular.module('CapitalGroup.factories', [])
 				"update": { method: "PUT" },
 				"get": { method: "GET" }
 			});
-	}]);
+    }]);
+    
 
 
  

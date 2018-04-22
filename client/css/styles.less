@@ -23,17 +23,33 @@
 // }
 
 body {
-    margin-top: 1em;
+    margin-top: 2em;
     margin-bottom: 5em;
-    background-image: url("../images/CG_bg_color.png");
-    background-repeat: repeat;
+    // background-image: url("../images/CG_bg_color.png");
+    // background-repeat: repeat;
+    height: 100%;
+    line-height: 1.8;
+    color: #777;
 }
 
-.nav-header.navbar-brand {
-    font-size: 36px;
-    color: #DAA520;
+// html {
+//     height: 100%;
+//     line-height: 1.8;
+//     color: #777;
+// }
+
+.navbar-brand {
+    padding: 0px;
 }
 
+img.brandImg{
+    margin-top: -.5em !important;
+    height: 100%;
+    padding: 15px;
+    width: auto;
+    // font-size: 36px;
+    // color: #DAA520;
+}
 
 .container-fluid {
     height: 28px;
@@ -42,7 +58,7 @@ body {
     //min-height: 40px !important;
     //height: 1em;
     margin-bottom: 0;
-    background-color: whitesmoke;
+    background-color: #e4ba4e;
 
     .toplinks {
         color: white;
@@ -53,12 +69,6 @@ body {
     margin-top: -2.1em;
 }
 
-// .image1 {
-//         height: 7em;
-//         width: 10em;
-//         margin-top: 1em;
-//     }
-
 #navtitle {
         height: 7em;
         width: 10em;
@@ -66,7 +76,7 @@ body {
     }    
 
     .links {
-        background-color: #001a33;
+        background-color: black;
         height: 3em;
         width: 3em;
         float: left;
@@ -88,14 +98,6 @@ body {
         line-height: 3em;
     }
     
-
-    .facebook {
-        height: 1em;
-        width: 1em;
-        margin-top: 1em;
-        margin-right: 1em;
-    }
-    
     .instagram {
         height: 1em;
         width: 1em;
@@ -114,16 +116,21 @@ body {
         font-size: 12px;
         padding: 10px 24px;
         border-radius: 2px;
-        border: 2px solid #001a33;
+        border: 2px solid black;
         -webkit-transition-duration: 0.4s; /* Safari */
         transition-duration: 0.4s;
         margin-top: .5em;
     }
 
     .apply:hover {
-        background-color: #001a33;
+        background-color: black;
         color: white;
     }
+
+    // img.logo.img-responsive {
+    //     height: 5%;
+        // width: 5%;
+    // }
 
     /* .logo {
         height: 5em;
@@ -133,6 +140,11 @@ body {
 
     ul {
         list-style-type: none;
+        // margin: 0 2px;
+        // padding: 0;
+        // display: flex;
+        // justify-content: space-around;
+        // background-color: #e4ba4e;
 
         li {
             margin-left: 1.5em;
@@ -140,10 +152,11 @@ body {
             text-align: center;
 
             a{
-                color: #001a33;
+                color: white;
                 display: block;
                 text-align: center;
                 text-decoration: none;
+                font-size: 18px;
                 /* padding-top: 10px !important;
                 padding-bottom: 10px !important;
                 height: 28px;
@@ -151,8 +164,9 @@ body {
                 padding: 0;
                 margin: 0; */
             }
-           li a:hover {
-                background-color: #DAA520;
+            a.toplinks:hover {
+                color: white;
+                background-color: black;
                 // color:white;
                 // transition-duration: 0.4s;
             }
@@ -160,19 +174,30 @@ body {
     }
 }
 
+img.facebook {
+    //margin-top: 5%;
+    height: 1em;
+    width: 1em;
+    text-align: center;
+}
+
 .btn.btn-info {
     background-color: #DAA520;
 }
 
 .btn:hover {
-    background-color: #001a33;
+    background-color: black;
     color:white;
     transition-duration: 0.4s;
         
 }
 .footer-distributed {
+    text-align: center;
+    line-height: 2em !important;
+    height: 5em !important;
     height: 2em;
-    background-color: #001a33;
+    background-color: black;
+    //opacity: .5;
     color: white;
     line-height: 2em;
     font-size: 15px;
@@ -191,8 +216,8 @@ body {
     height: 2px;
     left: 0px;
     top: 0px;
-    content: '';
-    background: #001a33;
+    // content: '';
+    background: black;
     opacity: 0.3;
     transition: all 0.3s;
 }
@@ -204,25 +229,8 @@ body {
 
 .mailing {
     text-align: center;
+    color: #DAA520;
 }
-
-// .nav.navbar-nav.navbar-right li a:before {
-//    position: absolute;
-//     width: 100%;
-//     height: 2px;
-//     left: 0px;
-//     top: 0px;
-//     content: '';
-//     background: white;
-//     opacity: 0.3;
-//     transition: all 0.3s;
-// }
-
-// .nav.navbar-nav.navbar-right li a:hover:before {
-
-//      height: 100%;
-// } 
-
 
 @media screen and (max-width: 575px) {
     body {
@@ -231,45 +239,52 @@ body {
     .navbar ul li a {
         line-height: 2em;
     }
+
     .navbar .links {
         background-color: transparent;
         margin-top: -1em;
     }
-    // .navbar-header {
+
+    img.brandImg{
+        margin-top: .5em !important;
+        height: auto;
+        padding: 15px;
+        //width: auto;
+    }
+    .navbar-header {
+        background-color: black;
     //     background-image: url('../images/CG_logo.png');
     //     background-size: 100% 100%;
-    //     height: 8em;
-    // }
-    .image1 {
-        display: none;
+        height: 6em;
     }
-    .navbar-toggle.collapsed {
-        //padding: 0 0;
-        //margin-bottom: 0;
-        background-color: #001a33;
-        //margin-top: 76px;
-        margin-top: 7em;
+
+    img.facebook {
+        margin-top: 1em;
+        height: 1em !important;
+        width: 1em !important;
     }
+
     .nav.navbar-nav.navbar-right.words {
         display: inline-block;
     }
     #myNavbar {
-        background-color: transparent;
+        background-color: white;
+        color: black;
     }
     #anotherID {
         background-image: url('../images/CG_bg_color.png');
     }
-    /* .page-scroll{
-        background-color: #001a33;
-    } */
+ 
     .footer-distributed {
         text-align: center;
-        line-height: 2em;
-        height: 5em;
+        line-height: 2em !important;
+        height: 5em !important;
     }
+
     .navbar-toggle {
         display: inline-block;
         cursor: pointer;
+        background-color: black !important;
     }
     
     .bar1, .bar2, .bar3 {
@@ -293,6 +308,123 @@ body {
     }
 }
 
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1) {
+        body {
+        margin-top: 10em;
+    }
+
+    img.brandImg{
+        margin-top: .5em !important;
+        height: auto;
+        padding: 15px;
+        //width: auto;
+    }
+
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px !important;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar ul li a {
+        line-height: 1em;
+        //display: none;
+    }
+
+    // .nav.navbar-nav {
+    //     display: block;
+    // }
+
+    // a.toplinks {
+    //     display: block;
+    // }
+
+    .navbar .links {
+        background-color: transparent;
+        margin-top: -1em;
+    }
+
+    .navbar-header {
+        float: none;
+        background-color: black;
+    }
+
+    img.facebook {
+        margin-top: 1em;
+        height: 1em !important;
+        width: 1em !important;
+    }
+ 
+    .nav.navbar-nav.navbar-right.words {
+        display: inline-block;
+    }
+
+    #myNavbar {
+        background-color: white;
+        color: black;
+    }
+
+    #anotherID {
+        background-image: url('../images/CG_bg_color.png');
+    }
+  
+    .footer-distributed {
+        text-align: center;
+        line-height: 2em !important;
+        height: 5em !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+        background-color: black !important;
+    }
+
+    .navbar-collapse.collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        display: none !important;
+    }
+
+    
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+    
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #DAA520;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    
+    .change .bar2 {
+        opacity: 0;
+    }
+    
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
+ 
 // Animations
 
 main.ng-enter {

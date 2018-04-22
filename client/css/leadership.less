@@ -25,8 +25,28 @@
     }
 }
 
+@media (max-width: 768px) {
+    .mobileShow {
+        display: list-item;
+    }
+
+    .mobileHide {
+        display: none;
+    }
+
+    .leader {
+        width: 100%;
+        display: block;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
 .leadership {
     margin-top: 5%;
+    list-style-type: none;
 }
 
 .leader {
@@ -37,12 +57,12 @@
     margin: auto;
 }
 
-hr {
-    border-top: 4px double #DAA520;
+#leaderPage {
+    border-top: 4px double black;
     text-align: center;
 }
 
-.team-left .img-lead{
+.team-left .img-lead {
     max-width: 100%;
     height: auto;
 }
@@ -51,38 +71,33 @@ hr {
     text-align: center;
 }
 
-.titles{
+p.titles{
+    font-size: 24px;
     font-weight: bold;
+    color: #DAA520;
 }
 
-.jumbotron .meet {
+div.jumbotron {
     text-align: center;
-    color: white;
+    color: black;
+    background-color: #DAA520;
 }
 
-ul.leaders{
+.leaders {
     list-style-type: none;
     display: block;
 }
 
 .names {
-    color: white;
+    color: black;
 }
 
 h1{
-    color: white;
+    color: black;
 }
 
 .bio {
-    color: white;
+    color: black;
     font-weight: lighter;
     font-size: 2rem;
-}
-
-.titles {
-    color: white;
-}
-
-.mission {
-    color: white;
 }

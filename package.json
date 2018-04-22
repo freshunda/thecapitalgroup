@@ -10,6 +10,7 @@
   "author": "fm_lewis",
   "license": "ISC",
   "dependencies": {
+    "angular-scroll-animate": "^0.9.9",
     "bcrypt": "^1.0.2",
     "body-parser": "^1.17.2",
     "cookie-parser": "^1.4.3",
@@ -23,6 +24,11 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "prerender-node": "^2.7.2",
+    "scrollmagic": "^2.0.5",
+    "scrollreveal": "^3.3.6",
     "sendgrid": "^5.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.5.0"
   }
 }
