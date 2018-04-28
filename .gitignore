@@ -1,4 +1,6 @@
-
+node_modules
+.variables
+/.variables
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
