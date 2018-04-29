@@ -1,5 +1,0 @@
-export DB_HOST = "capitalgrpins.cmyadqhq5v9k.us-east-1.rds.amazonaws.com"
-export DB_U  = "flassiter"
-export DB_PASS = "19671115FL"
-export DB = "capitalgroup"
-export PORT = "3306"
