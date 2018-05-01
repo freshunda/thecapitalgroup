@@ -4,7 +4,7 @@
   "description": "capital group site",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server/index.js",
+    "start": "node app",
     "test": "source .variables && nodemon"
   },
   "author": "fm_lewis",
