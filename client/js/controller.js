@@ -14,9 +14,9 @@ angular.module('CapitalGroup.controllers', [])
 
     }])
     .controller("GalleryController", ["$scope", "Gallery", "$location", "SEOService", function ($scope, Gallery, $location, SEOService) {
-        $scope.galleries = Gallery.query();
+        //$scope.galleries = Gallery.query();
 		SEOService.setSEO({
-			title: 'Gallery',
+			title: 'The Capital Group Gallery',
 			image: 'http://' + $location.host() + '/images/CG_logo.png',
 			url: $location.url(),
 			description: 'The Capital Group Galleries'
@@ -25,7 +25,7 @@ angular.module('CapitalGroup.controllers', [])
     
     .controller("ContactController", ["$scope", "$location", "SEOService", function ($scope, $location, SEOService) {
 		SEOService.setSEO({
-			title: 'Contact',
+			title: 'The Capital Group Contact',
 			image: 'http://' + $location.host() + '/images/CG_logo.png',
 			url: $location.url(),
 			description: 'The Capital Group Contact'
@@ -34,7 +34,7 @@ angular.module('CapitalGroup.controllers', [])
 
     .controller('AboutController', ['$scope', '$http', '$location', 'SEOService', function ($scope, $http, $location, SEOService) {
         SEOService.setSEO({
-            title: 'About',
+            title: 'The Capital Group About',
             image: 'http://' + $location.host() + '/images/CG_logo.png',
             url: $location.url(),
             description: 'The Capital Group About'
@@ -43,7 +43,7 @@ angular.module('CapitalGroup.controllers', [])
 
     .controller('LeadershipController', ['$scope', '$http', '$location', 'SEOService', function ($scope, $http, $location, SEOService) {
         SEOService.setSEO({
-            title: 'Leadership',
+            title: 'The Capital Group Leadership',
             image: 'http://' + $location.host() + '/images/CG_logo.png',
             url: $location.url(),
             description: 'The Capital Group Leadership'
@@ -52,7 +52,7 @@ angular.module('CapitalGroup.controllers', [])
 
     .controller('ProductController', ['$scope', '$location', '$window', 'SEOService', function ($scope, $location, $window, SEOService) {
         SEOService.setSEO({
-            title: 'Our Product',
+            title: 'The Capital Group Our Product',
             image: 'http://' + $location.host() + '/images/CG_logo.png',
             url: $location.url(),
             description: 'The Capital Group Product'
@@ -65,7 +65,7 @@ angular.module('CapitalGroup.controllers', [])
 
     .controller('CareersController', ['$scope', '$location', 'SEOService', function ($scope, $location, SEOService) {
         SEOService.setSEO({
-            title: 'Careers',
+            title: 'The Capital Group Careers',
             image: 'http://' + $location.host() + '/images/CG_logo.png',
             url: $location.url(),
             description: 'The Capital Group Careers'
@@ -78,7 +78,7 @@ angular.module('CapitalGroup.controllers', [])
 
     .controller('ApplyController', ['$scope', '$http', '$location', 'SEOService', '$routeParams', 'Apply', function ($scope, $http, $location, SEOService, $routeParams, Apply) {
         SEOService.setSEO({
-            title: 'Apply',
+            title: 'The Capital Group Apply',
             image: 'http://' + $location.host() + '/images/CG_logo.png',
             url: $location.url(),
             description: 'The Capital Group Apply Now'

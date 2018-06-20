@@ -2,13 +2,13 @@ angular.module('CapitalGroup.factories', [])
 
 
     .factory('Apply', ['$resource', function ($resource) {
-        return $resource('api/apply/:id', { id: '@id' }, {
+        return $resource('/api/apply/:id', { id: '@id' }, {
             'update': { method: 'PUT' }
         });
     }])
 
     .factory('Agents', ['$resource', function ($resource) {
-        return $resource('api/agents/:id', { id: '@id' }, {
+        return $resource('/api/agents/:id', { id: '@id' }, {
         });
     }])
     .factory('Mailing', ['$resource', function ($resource) {
