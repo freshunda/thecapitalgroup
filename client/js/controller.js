@@ -72,7 +72,7 @@ angular.module('CapitalGroup.controllers', [])
         });
 
         $scope.goToApply = function () {
-            $location.path('/apply');
+            $window.location.href('http://capitalgrouprecruiting.com/');
         };
     }])
 
